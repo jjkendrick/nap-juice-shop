@@ -1,7 +1,12 @@
 # NGINX App Protect demo with OWASP Juice Shop
 
-Instructions: 
 
+Requirements: 
+* git
+* docker
+* docker-compose
+
+Instructions: 
 
 1. Sign up for an NGINX+/NGINX App Protect trial at [https://www.nginx.com/free-trial-request](https://www.nginx.com/free-trial-request/)
 2. Clone this repository:
