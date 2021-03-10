@@ -1,0 +1,12 @@
+version: "3"  # optional since v1.27.0
+services:
+  nginx_app_protect:
+    build: nginx_app_protect
+    ports:
+      - "80:80"
+    volumes:
+      - "./nginx_app_protect/custom_policy.json:/etc/nginx/custom_policy.json"
+      - "./nginx_app_protect/custom_log_format.json:/etc/nginx/custom_log_format.json"
+      - "./nginx_app_protect/nginx.conf:/etc/nginx/nginx.conf"
+  juice_shop:
+    image: bkimminich/juice-shop
