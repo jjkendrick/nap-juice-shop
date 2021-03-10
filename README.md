@@ -9,3 +9,8 @@ Instructions:
         git clone https://github.com/f5dsse/nap-juice-shop.git
 
 3. Copy the nginx-repo.crt and nginx-repo.key files you got from the trial downloads into the nginx_app_protect/ folder.
+4. Run docker-compose to build NAP image and bring up services:
+
+        docker-compose up -d
+
+5. Modify the custom_policy.json following the configuration guide here: [https://docs.nginx.com/nginx-app-protect/configuration/#](https://docs.nginx.com/nginx-app-protect/configuration/#)
