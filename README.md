@@ -19,3 +19,9 @@ Instructions:
         docker-compose up -d
 
 5. Modify the custom_policy.json following the configuration guide here: [https://docs.nginx.com/nginx-app-protect/configuration/#](https://docs.nginx.com/nginx-app-protect/configuration/#)
+6. Try some attacks against the application at http://localhost:80 (if port 80 is already in use just modify docker-compose.yml to expose a different port, i.e.: 
+
+        nginx_app_protect:
+          build: nginx_app_protect
+          ports:
+            - "8080:80"
